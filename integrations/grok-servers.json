@@ -1,0 +1,12 @@
+{
+  "recovery": {
+    "url": "https://agent-samaritan-recovery.mcp.opzero.sh/mcp",
+    "allowed_tools": [
+      "find_meetings_by_zip",
+      "find_online_meetings",
+      "find_recovery_resources",
+      "get_fellowship_info",
+      "get_meeting_details"
+    ]
+  }
+}

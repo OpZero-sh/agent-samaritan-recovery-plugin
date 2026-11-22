@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "recovery": {
+      "type": "http",
+      "url": "https://agent-samaritan-recovery.mcp.opzero.sh/mcp"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agent-samaritan-recovery",
+  "version": "1.0.0",
+  "description": "Find a peer recovery meeting that fits your day, check the access details, or find support for someone close to you.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "homepage": "https://github.com/OpZero-sh/agent-samaritan-recovery-plugin",
+  "repository": "https://github.com/OpZero-sh/agent-samaritan-recovery-plugin",
+  "license": "LicenseRef-OpZero-Plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Agent Samaritan: Recovery",
+        "shortDescription": "Find peer support meetings",
+        "longDescription": "Find a peer recovery meeting that fits your day, check the access details, or find support for someone close to you.",
+        "developerName": "OpZero",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/OpZero-sh/agent-samaritan-recovery-plugin",
+        "privacyPolicyURL": "https://opzero.sh/privacy",
+        "supportURL": "https://opzero.sh/support",
+        "termsOfServiceURL": "https://opzero.sh/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

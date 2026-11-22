@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "name": "agent-samaritan-recovery",
+  "version": "1.0.0",
+  "displayName": "Agent Samaritan: Recovery",
+  "description": "Find a peer recovery meeting that fits your day, check the access details, or find support for someone close to you.",
+  "compat": {
+    "source": "native",
+    "manifestDir": ".muse-plugin"
+  },
+  "capabilities": {
+    "skills": [
+      {
+        "id": "explore-peer-support",
+        "path": "skills/explore-peer-support/SKILL.md"
+      },
+      {
+        "id": "find-a-meeting",
+        "path": "skills/find-a-meeting/SKILL.md"
+      }
+    ],
+    "mcpServers": [
+      {
+        "id": "recovery",
+        "transport": "http",
+        "url": "https://agent-samaritan-recovery.mcp.opzero.sh/mcp"
+      }
+    ]
+  }
+}

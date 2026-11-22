@@ -1,0 +1,18 @@
+{
+  "name": "agent-samaritan-recovery",
+  "displayName": "Agent Samaritan: Recovery",
+  "version": "1.0.0",
+  "description": "Find a peer recovery meeting that fits your day, check the access details, or find support for someone close to you.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "repository": "https://github.com/OpZero-sh/agent-samaritan-recovery-plugin",
+  "homepage": "https://github.com/OpZero-sh/agent-samaritan-recovery-plugin",
+  "documentationUrl": "https://github.com/OpZero-sh/agent-samaritan-recovery-plugin#readme",
+  "privacyPolicyUrl": "https://opzero.sh/privacy",
+  "supportUrl": "https://opzero.sh/support",
+  "termsOfServiceUrl": "https://opzero.sh/terms",
+  "icon": "./assets/icon.png",
+  "license": "LicenseRef-OpZero-Plugin"
+}
