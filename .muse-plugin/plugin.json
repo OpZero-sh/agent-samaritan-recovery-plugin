@@ -17,6 +17,10 @@
       {
         "id": "find-a-meeting",
         "path": "skills/find-a-meeting/SKILL.md"
+      },
+      {
+        "id": "find-family-support",
+        "path": "skills/find-family-support/SKILL.md"
       }
     ],
     "mcpServers": [

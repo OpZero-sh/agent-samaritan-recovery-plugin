@@ -14,5 +14,10 @@
   "supportUrl": "https://opzero.sh/support",
   "termsOfServiceUrl": "https://opzero.sh/terms",
   "icon": "./assets/icon.png",
-  "license": "LicenseRef-OpZero-Plugin"
+  "license": "LicenseRef-OpZero-Plugin",
+  "network": {
+    "hosts": [
+      "agent-samaritan-recovery.mcp.opzero.sh"
+    ]
+  }
 }
