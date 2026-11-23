@@ -48,13 +48,13 @@ In Claude chat or Cowork, open the installed plugin's Connectors tab and connect
 
 ## What the plugin runs, sends and fetches
 
-- **One remote MCP server.** The plugin connects to `https://agent-samaritan-recovery.mcp.opzero.sh/mcp`, run by OpZero. It is declared in `.mcp.json` and under `network.hosts` in the plugin manifest. It needs no sign in. The plugin contacts no other host.
+- **One remote MCP server.** The plugin connects to `https://agent-samaritan-recovery.mcp.opzero.sh/mcp`, run by OpZero. It is declared in `.mcp.json`. It needs no sign in. The plugin contacts no other host.
 - **What a search sends.** A local search sends a five digit ZIP, the fellowship and your day, time, distance and format filters. An online search sends the fellowship and time filters. A detail lookup sends a meeting ID. No name, history or street address is requested.
 - **What the server looks up.** The hosted service fetches public meeting feeds and returns the source with every listing: the Metro Atlanta AA directory, a public aggregator of NA service body meeting lists, and a public ZIP lookup for an approximate centre point. For SMART Recovery, Celebrate Recovery and AA outside Metro Atlanta it returns official locator links for you to open yourself.
 - **No hooks and no local code.** The plugin holds skills, one agent and the connector declaration.
-- **Optional developer files, never run by the plugin.**
-  - `scripts/build_openai.py` builds a ZIP of this plugin for ChatGPT and Codex when you run it yourself. It reads the skills, the license, the plugin icon and the files in `integrations/openai`, and writes ZIP files to the folder you name. It makes no network request.
-  - `integrations/grok_example.py` is a sample for the xAI API. With `--dry-run` it only prints the request. Without it, it reads `XAI_API_KEY` (and the optional model name `XAI_MODEL`) from your environment and sends your question and the server list in `integrations/grok-servers.json` to `https://api.x.ai/v1/responses`. This happens only when you run the script yourself.
+- **Optional developer files, never run by the plugin.** The two helper scripts are not in this repository. They live in the catalog repository, https://github.com/OpZero-sh/plugins, and do something only if you clone it and run them yourself.
+  - `tools/build_openai.py` in the catalog builds a ZIP of this plugin for ChatGPT and Codex. It reads the skills, the license, the plugin icon and the files in `integrations/openai`, and writes ZIP files to the folder you name. It makes no network request.
+  - `tools/grok_example.py` in the catalog is a sample for the xAI API. With `--dry-run` it only prints the request. Without it, it reads `XAI_API_KEY` (and the optional model name `XAI_MODEL`) from your environment and sends your question and the server list in `integrations/grok-servers.json` to `https://api.x.ai/v1/responses`.
   - `.muse-plugin/plugin.json`, `integrations/openai/plugin.json` and `integrations/openai/mcp.json` are manifests for other clients. They name the same server.
 
 ## Limits and urgent help
